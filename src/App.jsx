@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="h-screen flex flex-col p-4 max-w-screen-md mx-auto bg-gradient-to-bl from-cyan-100 via-blue-50 to-white">
       <TempComponent 
         deck={deck}
         gridSize={gridSize}
@@ -61,7 +61,14 @@ function App() {
       
       <ResetButton onReset={() => reInitializeGame(gridSize)} />
 
-      {/* game board */}
+      <div className="flex-grow">
+        <GameBoard 
+          gridSize={gridSize}
+          deck={deck}
+          setMoves={setMoves}
+          setMatches={setMatches}
+        />
+      </div>
       
       {matches === deck.length/2 && <Graffiti />}
 
