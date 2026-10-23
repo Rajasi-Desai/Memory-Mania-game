@@ -53,7 +53,11 @@ function App() {
 
       <Settings onGridChange={reInitializeGame} />
 
-      {/* ScoreBoard */}
+      <ScoreBoard 
+        moves={moves}
+        matches={matches}
+        total={deck.length / 2}
+      />
       
       <ResetButton onReset={() => reInitializeGame(gridSize)} />
 
