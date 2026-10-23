@@ -54,7 +54,9 @@ function App() {
       <Settings onGridChange={reInitializeGame} />
 
       {/* ScoreBoard */}
-      {/* Reset button */}
+      
+      <ResetButton onReset={() => reInitializeGame(gridSize)} />
+
       {/* game board */}
       {/* graffiti */}
     </div>
