@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useImperativeHandle } from "react";
 
-const Card = ({icon, gridSize, onClick }) => {
+const Card = ({icon, gridSize, onClick, ref }) => {
   const [flipped, setFlipped] = useState(false);
 
   let baseClass = gridSize === 4
@@ -14,14 +14,22 @@ const Card = ({icon, gridSize, onClick }) => {
     " absolute inset-0" +
     " border rounded" +
     " backface-hidden";
+
+  useImperativeHandle(ref, () => ({
+    flip: () => setFlipped(true),
+    unflip: () => setFlipped(false),
+    get flipped() {
+      return flipped;
+    },
+    get icon() {
+      return icon;
+    },
+  }));
       
   return (
     <div 
       className="w-full h-full cursor-pointer select-none perspective"
-      onClick={() => {
-        setFlipped(!flipped);
-        onClick?.();
-      }}
+      onClick={onClick}
     >
       <div 
         className={`
