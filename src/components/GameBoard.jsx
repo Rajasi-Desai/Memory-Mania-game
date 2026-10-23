@@ -15,6 +15,9 @@ const GameBoard = ({ gridSize, deck, setMoves, setMatches }) => {
           key={idx}
           icon={icon}
           gridSize={gridSize}
+          onClick={() => {
+            console.log("card clicked", idx)
+          }}
         />
       ))}
 
