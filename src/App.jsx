@@ -62,7 +62,9 @@ function App() {
       <ResetButton onReset={() => reInitializeGame(gridSize)} />
 
       {/* game board */}
-      {/* graffiti */}
+      
+      {matches === deck.length/2 && <Graffiti />}
+
     </div>
   )
 }
