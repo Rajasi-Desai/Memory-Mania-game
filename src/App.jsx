@@ -21,11 +21,20 @@ function App() {
     return shuffleDeck(newDeck);
   };
 
-  const [deck, setNewDeck] = useState(() => createNewDeck(4));
-
+  const [deck, setDeck] = useState(() => createNewDeck(4))
   const [moves, setMoves] = useState(0);
   const [matches, setMatches] = useState(0);
   const [resetCounter, setResetCounter] = useState(0);
+
+  const reInitializeGame = (size) => {
+    setGridSize(size);
+
+    setDeck(createNewDeck(size));
+
+    setMoves(0);
+
+    setMatches(0);
+  };
 
   return (
     <div>
@@ -42,7 +51,8 @@ function App() {
         Memory Match Mania
       </h1>
 
-      {/* Settings */}
+      <Settings onGridChange={reInitializeGame} />
+
       {/* ScoreBoard */}
       {/* Reset button */}
       {/* game board */}
