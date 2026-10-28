@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Memory-Mania-game/',
   plugins: [react(), eslint(), tailwindcss(),],
   server: {
     port: 3001,
