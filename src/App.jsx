@@ -4,7 +4,6 @@ import Graffiti from "./components/Graffiti";
 import ResetButton from "./components/ResetButton";
 import ScoreBoard from "./components/ScoreBoard";
 import Settings from "./components/Settings";
-import TempComponent from "./components/TempComponent";
 import generateIcons from "./utils/generateIcons";
 import shuffleDeck from "./utils/shuffleDeck";
 import './App.css';
@@ -39,7 +38,7 @@ function App() {
   };
 
   return (
-    <div className="h-screen flex flex-col p-4 max-w-screen-md mx-auto bg-gradient-to-bl from-cyan-100 via-blue-50 to-white">
+    <div className="h-screen flex flex-col p-4 max-w-3xl mx-auto bg-linear-to-bl from-cyan-100 via-blue-50 to-white">
       <h1 className="text-3xl font-bold text-center mb-4"> 
         Memory Match Mania
       </h1>
@@ -54,7 +53,7 @@ function App() {
       
       <ResetButton onReset={() => reInitializeGame(gridSize)} />
 
-      <div className="flex-grow">
+      <div className="grow">
         <GameBoard 
           key={resetCounter}
           gridSize={gridSize}
