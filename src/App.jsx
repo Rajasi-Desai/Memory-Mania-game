@@ -38,8 +38,8 @@ function App() {
   };
 
   return (
-    <div className="h-screen flex flex-col p-4 max-w-3xl mx-auto bg-linear-to-bl from-cyan-100 via-blue-50 to-white">
-      <h1 className="text-3xl font-bold text-center mb-4"> 
+    <div className="h-screen flex flex-col p-4 max-w-3xl mx-auto bg-linear-to-bl from-rd-purple-200 via-pink-100 to-rd-purple-50">
+      <h1 className="text-3xl text-rd-teal-950 font-bold text-center mb-4"> 
         Memory Match Mania
       </h1>
 

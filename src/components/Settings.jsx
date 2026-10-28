@@ -1,6 +1,6 @@
 const Settings = ({ onGridChange }) => {
   return (
-    <div className="mb-4 text-center">
+    <div className="mb-4 text-center text-rd-teal-950">
         <label className="mr-2 font-semibold">Grid Size:</label>
         <select 
           onChange={(e) => onGridChange(parseInt(e.target.value))}
