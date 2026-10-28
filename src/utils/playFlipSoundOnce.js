@@ -1,6 +1,6 @@
 let soundQueue = false;
 
-const playFlipSoundOnce = (audioFile = "/sounds/flip.wav") => {
+const playFlipSoundOnce = (audioFile = `${import.meta.env.BASE_URL}sounds/flip.wav`) => {
   if(soundQueue) return;
 
   soundQueue = true;

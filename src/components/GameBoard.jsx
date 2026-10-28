@@ -34,10 +34,10 @@ const GameBoard = ({ gridSize, deck, setMoves, setMatches, key }) => {
 
       setMatches((prev) => {
         if(prev + 1 === deck.length/2){
-          const audio = new Audio("/sounds/cute_win.mp3");
+          const audio = new Audio(`${import.meta.env.BASE_URL}sounds/cute_win.mp3`);
           audio.play();
         } else {
-          const audio = new Audio("/sounds/match.mp3");
+          const audio = new Audio(`${import.meta.env.BASE_URL}sounds/match.mp3`);
           audio.play();
         }
         return prev + 1;
