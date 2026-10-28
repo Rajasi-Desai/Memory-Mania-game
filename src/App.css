@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
+@theme {
+  --color-whitesmoke:     #F6FAFA;
+  --color-darktuqoise:    #033735;
+  --color-lightturqoise:  #73e7df;  /* rgb(115 231 223) */
+  --color-lightpurple:    #f199ff;
+
+  --color-rd-teal-50:  oklch(98.4% 0.011 189.038);  /* #f2fcfb */
+  --color-rd-teal-100: oklch(95.4% 0.039 189.119);  /* #d3f9f5 */
+  --color-rd-teal-200: oklch(91.2% 0.074 188.744);  /* #a8f2ec */
+  --color-rd-teal-300: oklch(85.8% 0.106 189.389);  /* #73e7df */
+  --color-rd-teal-400: oklch(78.0% 0.117 190.230);  /* #44cfc8 */
+  --color-rd-teal-500: oklch(70.7% 0.108 190.821);  /* #37b6b0 */
+  --color-rd-teal-600: oklch(60.2% 0.091 193.022);  /* #2b9290 */
+  --color-rd-teal-700: oklch(51.3% 0.074 194.709);  /* #267474 */
+  --color-rd-teal-800: oklch(43.9% 0.060 196.534);  /* #215c5d */
+  --color-rd-teal-900: oklch(38.7% 0.049 196.734);  /* #204c4d */
+  --color-rd-teal-950: oklch(27.8% 0.035 200.842);  /* #102e2f */
+
+  --color-rd-purple-50:  oklch(97.9% 0.017 321.565);  /* #fef4ff */
+  --color-rd-purple-100: oklch(93.7% 0.061 321.646);  /* #feddff (clipped) */
+  --color-rd-purple-200: oklch(88.0% 0.116 321.271);  /* #fbbeff (clipped) */
+  --color-rd-purple-300: oklch(80.7% 0.166 321.916);  /* #f199ff */
+  --color-rd-purple-400: oklch(73.3% 0.183 322.757);  /* #de7ceb */
+  --color-rd-purple-500: oklch(66.4% 0.169 323.348);  /* #c46bce */
+  --color-rd-purple-600: oklch(56.6% 0.142 325.549);  /* #9f55a3 */
+  --color-rd-purple-700: oklch(48.2% 0.116 327.236);  /* #804480 */
+  --color-rd-purple-800: oklch(41.2% 0.094 329.061);  /* #663664 */
+  --color-rd-purple-900: oklch(36.4% 0.076 329.261);  /* #542e52 */
+  --color-rd-purple-950: oklch(26.1% 0.055 333.369);  /* #341930 */
+}
+
 :root {
   font-family: "IBM Plex Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

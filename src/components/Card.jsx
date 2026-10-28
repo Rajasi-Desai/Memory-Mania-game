@@ -46,20 +46,20 @@ const Card = ({icon, gridSize, onClick, ref }) => {
         `}
       >
         {/* front */}
-        {/* TODO maybe add my logo?? */}
         <div 
           className={`
               ${baseClass} 
-              bg-white/70 backdrop-blur-sm border-blue-200
+              bg-white/70 backdrop-blur-sm border-rd-teal-300 text-rd-purple-700
             `}
         >
+          {/* <img className="h-full w-full object-contain p-2" src="/images/Cat-RD-logo.png" alt="" /> */}
           ?
         </div>
         {/* Back/ icon side */}
         <div 
           className={`
               ${baseClass} 
-              bg-blue-400 hover:bg-blue-500 transition-colors duration-300 
+              bg-rd-teal-300 hover:bg-rd-teal-400 transition-colors duration-300  border-rd-teal-700
               rotate-y-180
             `}
         >
